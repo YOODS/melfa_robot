@@ -37,6 +37,8 @@ MelfaHW::MelfaHW (double period)
   addr_.sin_family = AF_INET;
   addr_.sin_port = htons (10000);
   addr_.sin_addr.s_addr = inet_addr (robot_ip_.c_str());
+  std::string msg="melfa HW ";
+  ROS_INFO((msg+robot_ip_).c_str());
 
   memset (&send_buff_, 0, sizeof (send_buff_));
   memset (&recv_buff_, 0, sizeof (recv_buff_));

@@ -13,14 +13,14 @@
       <visual>
 	<origin rpy="0 0 ${pi}" xyz="0 0 0"/>
 	<geometry>
-	  <mesh filename="package://melfa_description/mesh/rv4fl/L0.stl"/>
+	  <mesh filename="package://melfa_description/mesh/rv4fl/L0.stl" scale="1000 1000 1000" />
 	</geometry>
 	<material name="white"/>
       </visual>
       <collision>
 	<origin rpy="0 0 ${pi}" xyz="0 0 0"/>
 	<geometry>
-	  <mesh filename="package://melfa_description/mesh/rv4fl/L0.stl"/>
+	  <mesh filename="package://melfa_description/mesh/rv4fl/L0.stl" scale="1000 1000 1000" />
 	</geometry>
       </collision>
     </link>
@@ -28,7 +28,7 @@
     <joint name="joint1" type="revolute">
       <parent link="link0"/>
       <child link="link1"/>
-      <origin xyz="0 0 0.350" rpy="0 0 0"/>
+      <origin xyz="0 0 350" rpy="0 0 0"/>
       <axis xyz="0 0 1"/>
       <dynamics damping="0.7"/>
       <limit upper="${240*pi/180}" lower="${-240*pi/180}" effort="224.64" velocity="7.330"/>
@@ -36,16 +36,16 @@
 
     <link name="link1">
       <visual>
-	<origin rpy="0 0 0" xyz="0 0 -0.350"/>
+	<origin rpy="0 0 0" xyz="0 0 -350"/>
 	<geometry>
-	  <mesh filename="package://melfa_description/mesh/rv4fl/L1.stl"/>
+	  <mesh filename="package://melfa_description/mesh/rv4fl/L1.stl" scale="1000 1000 1000" />
 	</geometry>
 	<material name="white"/>
       </visual>
       <collision>
-	<origin rpy="0 0 0" xyz="0 0 -0.350"/>
+	<origin rpy="0 0 0" xyz="0 0 -350"/>
 	<geometry>
-	  <mesh filename="package://melfa_description/mesh/rv4fl/L1.stl"/>
+	  <mesh filename="package://melfa_description/mesh/rv4fl/L1.stl" scale="1000 1000 1000" />
 	</geometry>
       </collision>
     </link>
@@ -61,16 +61,16 @@
 
     <link name="link2">
       <visual>
-	<origin rpy="0 0 ${pi}" xyz="0 0 -0.350"/>
+	<origin rpy="0 0 ${pi}" xyz="0 0 -350"/>
 	<geometry>
-	  <mesh filename="package://melfa_description/mesh/rv4fl/L2.stl"/>
+	  <mesh filename="package://melfa_description/mesh/rv4fl/L2.stl" scale="1000 1000 1000" />
 	</geometry>
 	<material name="white"/>
       </visual>
       <collision>
-	<origin rpy="0 0 ${pi}" xyz="0 0 -0.350"/>
+	<origin rpy="0 0 ${pi}" xyz="0 0 -350"/>
 	<geometry>
-	  <mesh filename="package://melfa_description/mesh/rv4fl/L2.stl"/>
+	  <mesh filename="package://melfa_description/mesh/rv4fl/L2.stl" scale="1000 1000 1000" />
 	</geometry>
       </collision>
     </link>
@@ -78,7 +78,7 @@
     <joint name="joint3" type="revolute">
       <parent link="link2"/>
       <child link="link3"/>
-      <origin xyz="0 0 0.310" rpy="0 0 0"/>
+      <origin xyz="0 0 310" rpy="0 0 0"/>
       <axis xyz="0 1 0"/>
       <dynamics damping="0.7"/>
       <limit upper="${162*pi/180}" lower="0.00" effort="145.15" velocity="${360*pi/180}" />
@@ -86,16 +86,16 @@
 
     <link name="link3">
       <visual>
-	<origin rpy="0 0 ${pi}" xyz="0 0 ${-0.350-0.310}"/>
+	<origin rpy="0 0 ${pi}" xyz="0 0 ${-350-310}"/>
 	<geometry>
-	  <mesh filename="package://melfa_description/mesh/rv4fl/L3.stl"/>
+	  <mesh filename="package://melfa_description/mesh/rv4fl/L3.stl" scale="1000 1000 1000" />
 	</geometry>
 	<material name="white"/>
       </visual>
       <collision>
-	<origin rpy="0 0 ${pi}" xyz="0 0 ${-0.350-0.310}"/>
+	<origin rpy="0 0 ${pi}" xyz="0 0 ${-350-310}"/>
 	<geometry>
-	  <mesh filename="package://melfa_description/mesh/rv4fl/L3.stl"/>
+	  <mesh filename="package://melfa_description/mesh/rv4fl/L3.stl" scale="1000 1000 1000" />
 	</geometry>
       </collision>
     </link>
@@ -103,7 +103,7 @@
     <joint name="joint4" type="revolute">
       <parent link="link3"/>
       <child link="link4"/>
-      <origin xyz="-0.050 0 0.335" rpy="0 0 0"/>
+      <origin xyz="-50 0 335" rpy="0 0 0"/>
       <axis xyz="0 0 1"/>
       <dynamics damping="0.7"/>
       <limit upper="${200*pi/180}" lower="${-200*pi/180}" effort="10" velocity="${337*pi/180}" />
@@ -111,16 +111,16 @@
 
     <link name="link4">
       <visual>
-	<origin rpy="0 0 0" xyz="-0.050 0 ${-0.350-0.310-0.335}"/>
+	<origin rpy="0 0 0" xyz="-50 0 ${-350-310-335}"/>
 	<geometry>
-	  <mesh filename="package://melfa_description/mesh/rv4fl/L4.stl"/>
+	  <mesh filename="package://melfa_description/mesh/rv4fl/L4.stl" scale="1000 1000 1000" />
 	</geometry>
 	<material name="white"/>
       </visual>
       <collision>
-	<origin rpy="0 0 0" xyz="-0.050 0 ${-0.350-0.310-0.335}"/>
+	<origin rpy="0 0 0" xyz="-50 0 ${-350-310-335}"/>
 	<geometry>
-	  <mesh filename="package://melfa_description/mesh/rv4fl/L4.stl"/>
+	  <mesh filename="package://melfa_description/mesh/rv4fl/L4.stl" scale="1000 1000 1000" />
 	</geometry>
       </collision>
     </link>
@@ -136,16 +136,16 @@
 
     <link name="link5">
       <visual>
-	<origin rpy="0 0 0" xyz="-0.050 0 ${-0.350-0.310-0.335}"/>
+	<origin rpy="0 0 0" xyz="-50 0 ${-350-310-335}"/>
 	<geometry>
-	  <mesh filename="package://melfa_description/mesh/rv4fl/L5.stl"/>
+	  <mesh filename="package://melfa_description/mesh/rv4fl/L5.stl" scale="1000 1000 1000" />
 	</geometry>
 	<material name="white"/>
       </visual>
       <collision>
-	<origin rpy="0 0 0" xyz="-0.050 0 ${-0.350-0.310-0.335}"/>
+	<origin rpy="0 0 0" xyz="-50 0 ${-350-310-335}"/>
 	<geometry>
-	  <mesh filename="package://melfa_description/mesh/rv4fl/L5.stl"/>
+	  <mesh filename="package://melfa_description/mesh/rv4fl/L5.stl" scale="1000 1000 1000" />
 	</geometry>
       </collision>
     </link>
@@ -161,16 +161,16 @@
 
     <link name="link6">
       <visual>
-	<origin rpy="0 0 0" xyz="-0.050 0 ${-0.350-0.310-0.335-0.125}"/>
+	<origin rpy="0 0 0" xyz="-50 0 ${-350-310-335-125}"/>
 	<geometry>
-	  <mesh filename="package://melfa_description/mesh/rv4fl/L6.stl"/>
+	  <mesh filename="package://melfa_description/mesh/rv4fl/L6.stl" scale="1000 1000 1000" />
 	</geometry>
 	<material name="white"/>
       </visual>
       <collision>
-	<origin rpy="0 0 0" xyz="-0.050 0 ${-0.350-0.310-0.335-0.125}"/>
+	<origin rpy="0 0 0" xyz="-50 0 ${350-310-335-125}"/>
 	<geometry>
-	  <mesh filename="package://melfa_description/mesh/rv4fl/L6.stl"/>
+	  <mesh filename="package://melfa_description/mesh/rv4fl/L6.stl" scale="1000 1000 1000" />
 	</geometry>
       </collision>
     </link>
